@@ -64,7 +64,7 @@ contract ValidatorContract is ERC721Holder {
     }
 
     /// @notice Locks an ERC721 license in the contract, registering the user for rewards.
-    /// @param tokenId The ID of the license (ERC721) token to be locked.
+    /// @param tokenId The ID of the license (ERC721) token to be locked. Needs to be approved beforehand.
     function lockLicense(uint256 tokenId) external {
         require(
             tokenId < type(uint192).max,
