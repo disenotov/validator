@@ -32,7 +32,7 @@ forge build
 ### Run Tests
 To run the tests, use:
 ```bash
-forge test
+forge test -vv
 ```
 
 ### Deploy Contracts
